@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import ReloadPrompt from './components/ReloadPrompt.vue'
 </script>
 
 <template>
+  <ReloadPrompt />
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
@@ -11,7 +13,7 @@ import HelloWorld from './components/HelloWorld.vue'
       <HelloWorld msg="You did it!" />
 
       <nav>
-        <RouterLink to="/">Home v4</RouterLink>
+        <RouterLink to="/">Home v5</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
