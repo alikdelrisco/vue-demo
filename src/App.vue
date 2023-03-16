@@ -13,8 +13,8 @@ import ReloadPrompt from './components/ReloadPrompt.vue'
       <HelloWorld msg="You did it!" />
 
       <nav>
-        <RouterLink to="/">Home v11</RouterLink>
-        <RouterLink to="/about">About v1</RouterLink>
+        <RouterLink to="/">Home v12</RouterLink>
+        <RouterLink to="/about">About v2</RouterLink>
       </nav>
     </div>
   </header>
