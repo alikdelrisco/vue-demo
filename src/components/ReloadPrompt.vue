@@ -1,20 +1,13 @@
 <script setup lang="ts">
 import { useRegisterSW } from 'virtual:pwa-register/vue'
 
+// const checkVersionInterval = 1000 * 60 * 5
+
 const {
   offlineReady,
   needRefresh,
   updateServiceWorker,
-} = useRegisterSW({
-  onRegisteredSW: (url, r) => {
-      if (r) {
-        setInterval(() => {
-          console.log('checking update')
-          r.update()
-        }, 5000)
-      }
-  }
-})
+} = useRegisterSW()
 
 const close = async () => {
   offlineReady.value = false
